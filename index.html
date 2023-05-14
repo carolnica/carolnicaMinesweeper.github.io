@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MineSweeper</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./main.js" defer></script>
+    </head>
+
+    <body>
+        <div id="settingsWindow">
+
+        <div id="set-mines"><label>Number of Mines: <input type="number" id="custom-mines" max="99" min="1" value="10"></label></div>
+
+        <div id="grid-set">
+            <p id="grid-set-text">Choose Grid Proportions:</p>
+            <button id="eixei">8 X 8</button>
+            <button id="texte">10 X 10</button>
+            <button id="twxtw">12 X 12</button>
+            <button id="reselect">Select Again</button>
+        </div>
+        <div id="startGameDiv">Start Game!</div>
+
+        </div>
+        <div id="gameWindow">
+        <div id="container">
+            <span id="head-menu">
+                <span id="mines-text">Mines
+                    <p id="mines-number"></p>
+                </span>
+            </span>
+        </div>
+        <div id="timerDiv"> Timer (seconds): 
+            <p id="timerCounter"></p>
+            <p id="timerLast"></p>
+        </div>
+        <div class="newgame">Play Again!</div>
+    </div>
+    </body>
+</html>
